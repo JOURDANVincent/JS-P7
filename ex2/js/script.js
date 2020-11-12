@@ -1,15 +1,18 @@
-let btn = document.getElementById('btn');
-let res = document.getElementById('res');
+let para = document.getElementById("para");
+let bBold = document.getElementById("bold");
+let bColor = document.getElementById("color");
+let bSize = document.getElementById("size");
 
-btn.onclick = function () {
-    let iNum1 = document.getElementById('num1').value;
-    let iNum2 = document.getElementById('num2').value;
-    let resultat = multiply(iNum1,iNum2);
-    res.innerHTML = resultat;
-}
+bBold.onclick = function() {
+    para.style.fontWeight = "bold";
+    //alert("bold");
+};
 
-function multiply(n1, n2) {
-    return n1 * n2;
-}
+bColor.onclick = function() {
+    para.style.color = "red";
+    
+};
 
-
+bSize.onclick = function () {
+    para.style.fontSize = "30px";
+};
