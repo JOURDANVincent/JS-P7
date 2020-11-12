@@ -1,6 +1,14 @@
 let imgSizing = document.querySelector('img');
 
-// console.log(imgSizing.width)
+//console.log(this === imgSizing)
 
-imgSizing.onclick = () => ( imgSizing.style.width = "100%")
+imgSizing.onclick = () => {
+    let w = imgSizing.width;
+    console.log(imgSizing.width);
+    if (w > 1800) {
+        imgSizing.style.width = "50%";
+    } else {
+        imgSizing.style.width = "100%";
+    }
+}
     
