@@ -3,7 +3,7 @@ let imgSizing = document.querySelector('img');
 imgSizing.onclick = () => {
     
     let w = imgSizing.style.width;
-
+    
     if (w === '50%') {
         imgSizing.style.width = "100%";
     } else {
